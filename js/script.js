@@ -25,7 +25,10 @@ const skillsSet = [
   { name: "MongoDB", icon: "fas fa-database", level: "", desc: " " },
   { name: "Git/GitHub", icon: "fab fa-git-alt", level: "", desc: " " },
   { name: "C#", icon: "fas fa-terminal", level: "", desc: "" },
-  { name: "Python", icon: "fab fa-python", level: "", desc: "" }
+  { name: "Python", icon: "fab fa-python", level: "", desc: "" },
+    { name: "Unity", icon: "fab fa-unity", level: "", desc: "" },
+{ name: "Blender", icon: "fas fa-dice-d6", level: "", desc: "" }   
+
 ];
 
 const track = document.getElementById('skillsTrainTrack');
@@ -73,11 +76,13 @@ window.addEventListener('resize', () => {
 
 const projectsData = [
   { 
-    title: "The Finding of Isabel: A Desktop Horror Game", 
-    desc: "3D single-player horror game built with Unity and C# as a capstone project (2024–2025), featuring exploration, puzzles, and immersive storytelling.", 
-    tech: ["Unity", "C#", "Blender", "Mixamo"],
-    image: "../image/FindingIsabel.png",
-    youtubeUrl: ""
+    
+  title: "The Finding of Isabel: A Desktop Horror Game", 
+  desc: "A 3D single-player horror game built with Unity and C# as a capstone project (2024–2025)<br><br>Featuring a 3D model of the University of Rizal System (Binangonan Campus), exploration, puzzles, and immersive storytelling.", 
+  tech: ["Unity", "C#", "Blender", "Mixamo"],
+  image: "../image/FindingIsabel.png",
+  URL: ""
+
    
   },
   { 
@@ -178,12 +183,12 @@ function getProjectMedia(project) {
           <i class="fas fa-search-plus"></i>
           <span>Click to view</span>
         </div>
-        <div class="media-badge"><i class="fas fa-image"></i> Image</div>
+        <div class="media-badge"><i class=""></i> </div>
       </div>
     `;
   }
   
-  // PRIORITY 3: ICON
+// ICON
   else if (project.icon && project.icon.trim() !== '') {
     return `
       <div class="media-container icon-container" data-type="icon" data-icon="${project.icon}" data-title="${project.title}">
@@ -221,8 +226,9 @@ projectsData.forEach(p => {
     </div>
     <div class="project-info">
       <h3 class="project-title">${p.title}</h3>
-      <p class="project-desc">${p.desc.substring(0, 150)}${p.desc.length > 150 ? '...' : ''}</p>
+      <p class="project-desc">${p.desc.substring(0, 300)}${p.desc.length > 300 ? '...' : ''}</p>
       <div class="project-tech">${p.tech.map(t => `<span class="tech-tag">${t}</span>`).join('')}</div>
+      ${p.URL ? `<a href="${p.URL}" target="_blank" class="project-link-btn"> Game Trailer <i class="fab fa-youtube"></i></a>` : ''}
     </div>
   `;
   grid.appendChild(card);

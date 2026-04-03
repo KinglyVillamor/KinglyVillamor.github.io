@@ -556,8 +556,75 @@
   color: var(--accent);
   margin-right: 5px;
 }
+/* Project button for link in project   */
+
+.project-link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 1rem;
+  padding: 0.6rem 1.3rem;
+  background: transparent;
+  color: var(--text-secondary, #666);
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  transition: all 0.3s ease;
+  border: 1px solid var(--border-color, #ddd);
+  cursor: pointer;
+  backdrop-filter: blur(2px);
+}
+
+.project-link-btn:hover {
+  background: rgba(0, 0, 0, 0.05);
+  border-color: var(--accent-color, #999);
+  color: var(--text-primary, #333);
+  transform: translateY(-2px);
+  gap: 0.8rem;
+}
+
+.project-link-btn:active {
+  transform: translateY(1px);
+}
+
+.project-link-btn i {
+  font-size: 0.85rem;
+  transition: transform 0.2s ease;
+}
+
+.project-link-btn:hover i {
+  transform: scale(1.05);
+}
+
+/* Dark mode specific */
+body.dark .project-link-btn {
+  color: #aaa;
+  border-color: #444;
+}
+
+body.dark .project-link-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: #888;
+  color: #eee;
+}
+
+/* Light mode specific */
+body.light .project-link-btn {
+  color: #555;
+  border-color: #ccc;
+}
+
+body.light .project-link-btn:hover {
+  background: rgba(0, 0, 0, 0.04);
+  border-color: #999;
+  color: #111;
+}
 
 /* Project image container fix */
+
+
 .project-img {
   height: 220px;
   background: linear-gradient(145deg, var(--bg-secondary), var(--bg-primary));
