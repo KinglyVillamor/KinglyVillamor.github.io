@@ -24,7 +24,7 @@ const skillsSet = [
   { name: "TypeScript", icon: "fab fa-js", level: "", desc: " " },
   { name: "MongoDB", icon: "fas fa-database", level: "", desc: " " },
   { name: "Git/GitHub", icon: "fab fa-git-alt", level: "", desc: " " },
-  { name: "C#", icon: "fas fa-terminal", level: "", desc: "U" },
+  { name: "C#", icon: "fas fa-terminal", level: "", desc: "" },
   { name: "Python", icon: "fab fa-python", level: "", desc: "" }
 ];
 
