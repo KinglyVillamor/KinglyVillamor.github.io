@@ -1,18 +1,18 @@
  // ======================== AUTHENTIC SKILLS WITH REAL LOGOS ========================
     const skillsSet = [
-      { name: "React.js", icon: "fab fa-react", level: "Advanced", desc: "Hooks, Context, Router" },
-      { name: "JavaScript", icon: "fab fa-js", level: "Expert", desc: "ES6+, async patterns" },
-      { name: "Tailwind CSS", icon: "fab fa-css3-alt", level: "Advanced", desc: "Utility-first design" },
-      { name: "Vue.js", icon: "fab fa-vuejs", level: "Intermediate", desc: "Composition API" },
-      { name: "Node.js", icon: "fab fa-node-js", level: "Advanced", desc: "Express, REST APIs" },
-      { name: "TypeScript", icon: "fab fa-js", level: "Advanced", desc: "Type safety" },
-      { name: "MongoDB", icon: "fas fa-database", level: "Intermediate", desc: "NoSQL, Atlas" },
-      { name: "Git/GitHub", icon: "fab fa-git-alt", level: "Expert", desc: "CI/CD workflows" },
-      { name: "C#", icon: "fas fa-terminal", level: "Advanced", desc: "Unity scripting, .NET" },
-      { name: "Python", icon: "fab fa-python", level: "Intermediate", desc: "Automation, scripts" },
-      { name: "Unity", icon: "fab fa-unity", level: "Advanced", desc: "Game dev, 3D mechanics" },
-      { name: "Blender", icon: "fas fa-dice-d6", level: "Intermediate", desc: "3D modeling, assets" },
-      { name: "PHP", icon: "fab fa-php", level: "Intermediate", desc: "Backend logic" }
+      { name: "React.js", icon: "fab fa-react", level: "", desc: "" },
+      { name: "JavaScript", icon: "fab fa-js", level: "", desc: " " },
+      { name: "Tailwind CSS", icon: "fab fa-css3-alt", level: "", desc: "" },
+      { name: "Vue.js", icon: "fab fa-vuejs", level: "", desc: " " },
+      { name: "Node.js", icon: "fab fa-node-js", level: "", desc: "" },
+      { name: "TypeScript", icon: "fab fa-js", level: "", desc: " " },
+      { name: "MongoDB", icon: "fas fa-database", level: "", desc: "" },
+      { name: "Git/GitHub", icon: "fab fa-git-alt", level: "", desc: "" },
+      { name: "C#", icon: "fas fa-terminal", level: "", desc: " " },
+      { name: "Python", icon: "fab fa-python", level: "", desc: ", " },
+      { name: "Unity", icon: "fab fa-unity", level: "", desc: "   " },
+      { name: "Blender", icon: "fas fa-dice-d6", level: "", desc: " " },
+      { name: "PHP", icon: "fab fa-php", level: "", desc: " " }
     ];
 
     const trackContainer = document.getElementById('skillsTrainTrack');
